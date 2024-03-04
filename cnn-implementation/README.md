@@ -7,5 +7,6 @@ Convolutional neural network is a regularized type of feed-forward neural networ
 
 
 Training and Error Analysis:
+![](./assets/Screenshot%202024-03-04%20234703.png)
 
 ![](./assets/Screenshot%202024-03-04%20234412.png)
