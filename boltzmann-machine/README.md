@@ -36,16 +36,3 @@ This will train a Boltzmann Machine on the digits dataset and evaluate its accur
   - Use the trained Boltzmann Machine for classification on the test data.
   - Evaluate and print the classification accuracy.
 
-## Customization
-
-You can modify the code to experiment with different hyperparameters (e.g., learning rate, batch size, number of hidden units) or to apply the Boltzmann Machine to other datasets or tasks.
-
-Additionally, you can extend the implementation to include more advanced techniques like persistent contrastive divergence, parallel tempering, or different types of Boltzmann Machines such as Restricted Boltzmann Machines or Deep Belief Networks.
-
-## Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
