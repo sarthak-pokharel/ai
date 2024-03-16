@@ -55,7 +55,7 @@ class BoltzmannMachine:
                 batch_data = data[batch * self.batch_size:(batch + 1) * self.batch_size]
                 self.contrastive_divergence(batch_data)
 
-# Example usage: Handwritten digit recognition
+# Handwritten digit recognition
 if __name__ == "__main__":
 
     # Load the digits dataset
