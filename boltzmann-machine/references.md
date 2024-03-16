@@ -11,9 +11,9 @@
 
 ### Structure
 
-![](image-2.png)
+![](./images/image-2.png)
 
 ### Training
 
-![](image.png)
-![](image-1.png)
+![](./images/image.png)
+![](./images/image-1.png)
