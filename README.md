@@ -6,3 +6,4 @@
 - [Huggingface Word/Sentence Embeddings](./word-embeddings)
 - [Audio Processing and Experiments](./audiolab/)
 - [Boltzmann Machine Implementation](./boltzmann-machine/)
+- [Yolo V1 Test](./yolo-classification/)
