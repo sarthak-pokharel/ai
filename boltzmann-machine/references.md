@@ -11,10 +11,9 @@
 
 ### Structure
 
-!()[https://wikimedia.org/api/rest_v1/media/math/render/svg/419a4966dae86dfb786dbeb6aadd3c38d9ec30d3]
+![](image-2.png)
 
 ### Training
 
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/d9f7443db38ab124fe9ba987dedd47b3c8ece817)
-
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/a0c83d95b86d28bcede06faaa1df7de1e8553c31)
+![](image.png)
+![](image-1.png)
