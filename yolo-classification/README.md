@@ -2,7 +2,7 @@
 
 This code provides an implementation of the YOLOv1 (You Only Look Once) object detection algorithm using PyTorch. The YOLOv1 model is a unified deep neural network that simultaneously predicts bounding boxes and class probabilities for multiple objects in an image.
 
-## Model Architecture
+### Model Architecture
 
 The `YOLOv1` class defines the model architecture, which consists of the following components:
 
@@ -10,7 +10,7 @@ The `YOLOv1` class defines the model architecture, which consists of the followi
 
 2. **Fully Connected Layers**: The final convolutional layer is flattened and passed through two fully connected layers. The output of the last fully connected layer represents the bounding box coordinates, confidence scores, and class probabilities for each grid cell in the image.
 
-## Loss Function
+### Loss Function
 
 The `yolo_loss` function computes the YOLO loss, which is a combination of the following components:
 
@@ -18,15 +18,15 @@ The `yolo_loss` function computes the YOLO loss, which is a combination of the f
 2. **Localization Loss**: MSE loss between the predicted bounding box coordinates and the ground truth bounding box coordinates, weighted by a localization loss factor (`lambda_coord`).
 3. **Confidence Loss**: MSE loss between the predicted confidence scores and the ground truth confidence scores, weighted by a no-object loss factor (`lambda_noobj`).
 
-## Object Detection
+### Object Detection
 
 The `yolo_detect` function performs object detection using the YOLO predictions. It applies confidence thresholding and non-maximum suppression (NMS) to filter out low-confidence bounding boxes and remove overlapping bounding boxes, respectively.
 
-## Utility Function
+### Utility Function
 
 The `calc_iou` function calculates the Intersection over Union (IoU) between two bounding boxes, which is used during the NMS process.
 
-## Usage
+### Usage
 
 To use this implementation, you need to create an instance of the `YOLOv1` class, pass input images through the `forward` method, and compute the loss using the `yolo_loss` function during training. During inference, you can use the `yolo_detect` function to obtain the final bounding boxes and class probabilities.
 
