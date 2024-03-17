@@ -49,15 +49,6 @@ class YOLOv1(nn.Module):
 def yolo_loss(predictions, target, lambda_coord=5, lambda_noobj=0.5):
     """
     Compute the YOLO loss.
-
-    Args:
-        predictions (Tensor): The output tensor from the YOLO network.
-        target (Tensor): The ground truth tensor.
-        lambda_coord (float): The weight for the localization loss.
-        lambda_noobj (float): The weight for the no-object loss.
-
-    Returns:
-        Tensor: The YOLO loss.
     """
     batch_size = predictions.size(0)
     num_boxes = predictions.size(2)
@@ -94,14 +85,6 @@ def yolo_loss(predictions, target, lambda_coord=5, lambda_noobj=0.5):
 def yolo_detect(predictions, conf_thresh=0.5, nms_thresh=0.4):
     """
     Perform object detection using the YOLO predictions.
-
-    Args:
-        predictions (Tensor): The output tensor from the YOLO network.
-        conf_thresh (float): The confidence threshold for filtering bounding boxes.
-        nms_thresh (float): The threshold for non-maximum suppression.
-
-    Returns:
-        List: A list of bounding boxes and class probabilities.
     """
     batch_size = predictions.size(0)
     num_boxes = predictions.size(2)
@@ -164,13 +147,6 @@ def yolo_detect(predictions, conf_thresh=0.5, nms_thresh=0.4):
 def calc_iou(box1, box2):
     """
     Calculate the Intersection over Union (IoU) between two bounding boxes.
-
-    Args:
-        box1 (Tensor): Bounding box 1 in [x1, y1, x2, y2] format.
-        box2 (Tensor): Bounding box 2 in [x1, y1, x2, y2] format.
-
-    Returns:
-        Tensor: The IoU value between the two bounding boxes.
     """
     x1, y1, x2, y2 = box1[:, 0], box1[:, 1], box1[:, 2], box1[:, 3]
     x1_b, y1_b, x2_b, y2_b = box2[:, 0], box2[:, 1], box2[:, 2], box2[:, 3]
