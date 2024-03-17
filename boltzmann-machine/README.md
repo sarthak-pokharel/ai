@@ -15,3 +15,37 @@ The main script `boltzmann_machine.py` contains the `BoltzmannMachine` class and
 To run the example:
 
 1. Install the required dependencies:
+2. Run the script:
+
+This will train a Boltzmann Machine on the digits dataset and evaluate its accuracy for classification.
+
+## Code Structure
+
+- `BoltzmannMachine` class:
+  - `__init__`: Initialize the Boltzmann Machine with the specified number of visible and hidden units, learning rate, and batch size.
+  - `sigmoid`: Helper function to compute the sigmoid activation.
+  - `sample_visible`: Sample the visible units given the hidden unit states.
+  - `sample_hidden`: Sample the hidden units given the visible unit states.
+  - `contrastive_divergence`: Perform one step of contrastive divergence training.
+  - `train`: Train the Boltzmann Machine on the provided data for the specified number of epochs.
+
+- `main` function:
+  - Load the digits dataset from scikit-learn.
+  - Split the data into train and test sets.
+  - Create and train a Boltzmann Machine instance on the training data.
+  - Use the trained Boltzmann Machine for classification on the test data.
+  - Evaluate and print the classification accuracy.
+
+## Customization
+
+You can modify the code to experiment with different hyperparameters (e.g., learning rate, batch size, number of hidden units) or to apply the Boltzmann Machine to other datasets or tasks.
+
+Additionally, you can extend the implementation to include more advanced techniques like persistent contrastive divergence, parallel tempering, or different types of Boltzmann Machines such as Restricted Boltzmann Machines or Deep Belief Networks.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
