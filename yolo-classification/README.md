@@ -31,3 +31,12 @@ The `calc_iou` function calculates the Intersection over Union (IoU) between two
 To use this implementation, you need to create an instance of the `YOLOv1` class, pass input images through the `forward` method, and compute the loss using the `yolo_loss` function during training. During inference, you can use the `yolo_detect` function to obtain the final bounding boxes and class probabilities.
 
 Note that this implementation does not include data loading, preprocessing, or training/evaluation loops. You will need to integrate this code into your own project and provide the necessary data and training/evaluation pipelines.
+
+
+### Ref Images
+
+![](./images/class.png)
+
+![](./images/loss.png)
+
+![](./images/detect.png)
